@@ -1,10 +1,13 @@
 function removeIndex(k, p){
     let arr=[-24,-10,-5,-1, 0, 3, 4, 6, 9, 45, 98, 145];
-    if(k<=arr.length){
+    if(k <= arr.length){
       arr.splice(k-1, 1);
     }
     else{
       return -1;
+    }
+    if(arr[arr.length-1] < p){
+      arr.push(p);
     }
     for(let i = 0; i < arr.length; ++i){
       if( p < arr[i]){
