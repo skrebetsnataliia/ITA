@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 20px;
+}
+.logo{
+    width: 3%;
+    padding: 5px 30px;
+}
+.header{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    background-color: white;
+}
+.nav-list{
+    display:flex;
+    list-style: none;
+}
+
+.nav-list_link{
+    text-decoration: none;
+    padding: 5px 20px;
+    text-transform:uppercase;
+    color: cadetblue;
+    font-family: 'Krona One', sans-serif;
+}
+
+
+.nav-list_link:visited{
+    color:cadetblue;
+}
+
+.nav-list_link:hover{
+    color:gray;
+}
+
+.team-photo{
+    width: 100%;
+}
+
+.history-head, .last-match_head{
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+}
+
+.history-item{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+    background: rgba(95, 158, 160, 0.062) ;
+}
+
+.history-img{
+    padding:0 40px 10px 40px;
+    width: 500px;
+}
+
+.last-match{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.last-match_team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.last-match_score{
+    font-family: 'Krona One', sans-serif;
+    font-size: 50px;
+}
+
+.last-match_img{
+    width: 300px;
+}
+
+
+.footer{
+    background: rgba(0, 0, 0, 0.932);
+}
+
+.footer-link{
+    text-decoration: none;
+    padding: 5px 20px;
+    text-transform:uppercase;
+    color: white;
+    font-size: 12px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.footer-link:visited{
+    color:white;
+}
+
+.footer-link:hover{
+    color:gray;
+}
+
+.footer-nav{
+    padding: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    width: 250px;
+    background: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
