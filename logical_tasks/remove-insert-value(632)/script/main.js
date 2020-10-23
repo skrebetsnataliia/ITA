@@ -6,20 +6,14 @@ function removeIndex(k, p){
     else{
       return -1;
     }
-    console.log(arr);
-    arr.find((value, index)=>{ 
-      if(value>p){
-        arr.splice(index, 0, p);
-        return index;
+    for(let i = 0; i < arr.length; ++i){
+      if( p < arr[i]){
+         arr.splice(i, 0, p);
+         break;
       }
-      else{
-        arr.push(p)
-        return 1;
-      }
-     }
-    );
+    }
     return arr;
   }
   
-  console.log(removeIndex(4, 200));
-  console.log(removeIndex(0, 200));
+  console.log(removeIndex(1, -100));
+  console.log(removeIndex(5, 100));
