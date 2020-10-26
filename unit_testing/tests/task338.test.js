@@ -10,11 +10,26 @@ beforeEach( () => {
 
 const result = '3';
 
-test( 'Intersection', () => {
-    expect(sequenceIntersection(arr1, arr2)).toBe(result),
-    expect(sequenceIntersection(arr1, [])).toBeFalsy,
-    expect(sequenceIntersection(arr1, arr2)).toBeTruthy,
-    expect(sequenceIntersection(arr1, arr3)).toBeFalsy,
-    expect(sequenceIntersection(arr1, arr3)).toBeNull,
-    expect(sequenceIntersection(arr1, arr3)).toBeUndefine
-})
+describe('Testing of function sequenceIntersection', () => {
+  test( 'Intersection', () => {
+    expect(sequenceIntersection(arr1, arr2)).toBe(result);
+  });
+
+  test( 'Intersection', () => {
+    expect(sequenceIntersection(arr1, [])).toBeFalsy;
+  });
+
+  test( 'Intersection', () => {
+    expect(sequenceIntersection(arr1, arr2)).toBeTruthy;
+  });
+
+  test( 'Intersection', () => {
+    expect(sequenceIntersection(arr1, arr3)).toBeFalsy;
+  });
+  test( 'Intersection', () => {
+    expect(sequenceIntersection(arr1, arr3)).toBeNull;
+  });
+  test( 'Intersection', () => {
+    expect(sequenceIntersection(arr1, arr3)).toBeUndefine;
+  });
+});
