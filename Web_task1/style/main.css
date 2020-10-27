@@ -2,13 +2,16 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     margin: 20px;
 }
+
 .logo{
     width: 3%;
     padding: 5px 30px;
 }
+
 .header{
     display: flex;
     flex-direction:row;
@@ -17,7 +20,9 @@ body{
     position: fixed;
     top:0;
     background-color: white;
+    animation: moveHeaderToTop 1.5s 1;
 }
+
 .nav-list{
     display:flex;
     list-style: none;
@@ -28,7 +33,7 @@ body{
     padding: 5px 20px;
     text-transform:uppercase;
     color: cadetblue;
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Krona One', sans-serif;  
 }
 
 
@@ -37,11 +42,12 @@ body{
 }
 
 .nav-list_link:hover{
-    color:gray;
+    animation: linkAnimateHeader 1s infinite;
 }
 
 .team-photo{
     width: 100%;
+    animation: changingPhotoSize 1.5s 1;
 }
 
 .history-head, .last-match_head{
@@ -108,6 +114,7 @@ body{
 
 .footer-link:hover{
     color:gray;
+    animation: linkAnimateFooter 1.5s 1;
 }
 
 .footer-nav{
@@ -136,3 +143,90 @@ body{
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  .news-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px auto;
+  }
+  
+  .news-item{
+    width: 250px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-family: 'Krona One', sans-serif;  
+    height: 400px;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-size: 12px;
+  }
+
+  .news-item:hover{
+      overflow: scroll;
+  }
+
+  .news-head{
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .news-item_head{
+      text-align: center;
+      border-bottom: 1px solid black;
+      border-top: 1px solid black;
+  }
+
+  .news-item_content{
+      text-align: justify;
+  }
+  
+  .news-item_date{
+      text-align: right;
+      color: gray;
+      font-size: 8px;
+  }
+
+  .news-item_img{
+      width: 250px;
+  }
+
+  @keyframes moveHeaderToTop{
+    from{
+        margin-top: 500px;
+    }
+    to{
+        margin-top: 0;
+    }
+  }
+
+  @keyframes changingPhotoSize{
+    from{
+        width: 25%;
+    }
+    to{
+        width: 100%;
+    }
+  }
+
+  @keyframes linkAnimateFooter{
+      from{
+        transform: rotate(90deg);
+      }
+      to{
+        transform: rotate(180deg);
+      }
+  }
+
+  @keyframes linkAnimateHeader{
+    from{
+      color:cadetblue;
+    }
+    to{
+     color: rgba(95, 158, 160, 0.096);
+    }
+}
