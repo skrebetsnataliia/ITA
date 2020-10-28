@@ -217,6 +217,11 @@ body{
     position: relative;
     display: inline-block;
   }
+
+  .dropdown-item{
+      display: flex;
+      flex-direction: column;
+  }
   
   .dropdown-content {
     display: none;
