@@ -1,0 +1,35 @@
+@keyframes moveHeaderToTop{
+    from{
+        margin-top: 500px;
+    }
+    to{
+        margin-top: 0;
+    }
+  }
+
+  @keyframes changingPhotoSize{
+    from{
+        width: 25%;
+    }
+    to{
+        width: 100%;
+    }
+  }
+
+  @keyframes linkAnimateFooter{
+      from{
+        transform: rotate(90deg);
+      }
+      to{
+        transform: rotate(180deg);
+      }
+  }
+
+  @keyframes linkAnimateHeader{
+    from{
+      color:cadetblue;
+    }
+    to{
+     color: rgba(95, 158, 160, 0.096);
+    }
+}

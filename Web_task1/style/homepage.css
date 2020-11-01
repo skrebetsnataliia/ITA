@@ -1,0 +1,48 @@
+.team-photo{
+    width: 100%;
+    animation: changingPhotoSize 1.5s 1;
+}
+
+.history-head, .last-match_head{
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+}
+
+.history-item{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Krona One', sans-serif;
+    font-size: 20px;
+    background: rgba(95, 158, 160, 0.062);
+}
+
+.history-img{
+    padding:0 40px 10px 40px;
+    width: 70%;
+}
+
+.last-match{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.last-match_team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.last-match_score{
+    font-family: 'Krona One', sans-serif;
+    font-size: 50px;
+}
+
+.last-match_img{
+    width: 300px;
+}
