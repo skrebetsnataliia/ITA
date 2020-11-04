@@ -1,0 +1,39 @@
+.logo{
+    width: 50px;
+}
+
+.nav-link{
+    text-decoration: none;
+    padding: 5px 10px;
+    text-transform:uppercase;
+    color: cadetblue;
+    font-family: 'Krona One', sans-serif;  
+    font-size: 14px;
+}
+
+.nav-link:hover{
+    animation: linkAnimateHeader 1s infinite;
+}
+
+.contacts{
+    font-size: 12px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.footer-link{
+    text-decoration: none;
+    padding: 5px 20px;
+    text-transform:uppercase;
+    color: white;
+    font-size: 12px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.footer-link:visited{
+    color:white;
+}
+
+.footer-link:hover{
+    color:gray;
+    animation: linkAnimateFooter 1.5s 1;
+}

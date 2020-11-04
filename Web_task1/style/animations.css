@@ -33,3 +33,12 @@
      color: rgba(95, 158, 160, 0.096);
     }
 }
+
+@keyframes logo{
+  from{
+    margin-left: 300px;
+  }
+  to{
+    margin-left: 0;
+  }
+}
